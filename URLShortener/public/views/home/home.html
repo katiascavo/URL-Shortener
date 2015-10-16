@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>URLShortener.com</h1>
+            <br>
+
+            <h3>Generate your Shorten URL</h3>
+
+            <p align="left">
+            <div class="form-group">
+                <input class="form-control" placeholder="Enter long URL" ng-model="longURL">
+            </div>
+            <button type="button" ng-click = "genShort()" class="btn btn-default">Shorten URL</button>
+            &nbsp; {{risp}} &nbsp; {{shortU}}<button type="button" ng-click ="goLong()" class="btn btn-link">{{link}}</button>
+
+            </p>
+            <br>
+            <h3>(Optional) Custom Shorten URL</h3>
+
+            <p>
+            <div class="form-group">
+                <input class="form-control" placeholder="Enter your short URL" ng-model="shortURL" style="width: 500px;">
+            </div>
+            <button type="button" ng-click = "save()" class="btn btn-default">Custom Shorten URL</button>
+                &nbsp; {{ris}} &nbsp; {{detail}}<button type="button" ng-click ="goCustomLong()" class="btn btn-link">{{linkCustom}}</button>
+            </p>
+            <br>
+
+            <h3>URL Details</h3>
+
+            <p align="left">
+            <div class="form-group">
+                <input class="form-control" placeholder="Enter short URL" ng-model="shortUrl" style="width: 500px;">
+            </div> &nbsp;{{ristat}}
+            </p>
+            <p>
+                <button type="button" ng-click = "viewStats()" class="btn btn-default">Stats</button>
+                &nbsp;&nbsp;&nbsp; <button type="button" ng-click = "viewPageGraph()" class="btn btn-default">View graph</button>
+                &nbsp;&nbsp;&nbsp; <button type="button" ng-click = "goweb()" class="btn btn-default">Open web page</button>
+                &nbsp; {{name}}
+            </p>
+            <br>
+            {{error}} {{error2}} {{error3}}
+            <ul>
+                <li ng-repeat="x in nome">{{ x.name+ " " + x.value }}</li>
+            </ul>
+            <ul>
+                <li ng-repeat="x in request">{{ x.key+ " " + x.value1 }}</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
