@@ -1,5 +1,5 @@
 # URL-Shortener
-Dockerfile source: https://github.com/GruppoPBDMNG-1/Dockerfile.git
+Dockerfile source: https://github.com/katiascavo/Dockerfile.git
 
 ##Installation guide
 Remember to set port 8080 into Virtual-Box
